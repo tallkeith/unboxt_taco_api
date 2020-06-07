@@ -21,12 +21,12 @@ RSpec.describe "Tacos", type: :request do
 
   describe 'POST /tacos' do
     # valid payload
-    let(:valid_params) { { 'meat': 'Steak', 'rice': true, 'salsa': false } }
+    let(:valid_params) { { 'meat': 'steak', 'rice': true, 'salsa': false } }
     context 'when the request is valid' do
       before { post '/tacos', params: valid_params }
 
       it 'creates a todo' do
-        expect(json['meat']).to eq('Steak')
+        expect(json['meat']).to eq('steak')
       end
 
       it 'returns status code 201' do

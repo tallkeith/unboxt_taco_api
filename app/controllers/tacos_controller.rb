@@ -35,7 +35,8 @@ class TacosController < ApplicationController
 
   def taco_params
     # whitelist params
-    params.permit(:meat, :rice, :salsa, :note, :taco)
+    params.permit(:meat, :rice, :salsa, :note)
+
   end
 
   def set_taco

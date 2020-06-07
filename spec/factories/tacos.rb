@@ -1,13 +1,13 @@
 FactoryBot.define do
   factory :taco do
-    meat { 'Steak' }
+    meat { 'steak' }
     rice { true }
     salsa { false }
     note { 'Fake Note' }
   end
 
   trait :chicken_taco do
-    meat { 'Chicken' }
+    meat { 'chicken' }
   end
 
   trait :no_note do

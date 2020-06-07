@@ -18,7 +18,7 @@ RSpec.describe Taco, :type => :model do
   describe 'meat validations' do
     context 'valid when' do
       it 'has a meat' do
-        expect(subject.meat).to eq('Steak')
+        expect(subject.meat).to eq('steak')
         expect(subject.meat).to_not eq('Chicken')
       end
     end
