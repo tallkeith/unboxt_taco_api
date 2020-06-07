@@ -43,7 +43,7 @@
 
       <label>Notes</label>
       <div class="form-group">
-        <textarea class="form-control" rows="3" ng-model="tc.newTaco.notes"></textarea>
+        <textarea class="form-control" rows="3" ng-model="tc.newTaco.note"></textarea>
       </div>
 
       <button type="submit" class="btn btn-primary">{{tc.creatingTaco ? 'Ordering Taco...' : 'Order Taco'}}</button>
@@ -71,7 +71,7 @@
         <td class="meat">{{taco.meat}}</td>
         <td class="rice">{{taco.rice ? 'yes' : 'no'}}</td>
         <td class="salsa">{{taco.salsa ? 'yes' : 'no'}}</td>
-        <td>{{taco.notes}}</td>
+        <td>{{taco.note}}</td>
         <td><button type="button" class="btn btn-danger btn-xs fa fa-times" title="Delete this Taco" ng-click="tc.deleteTaco(taco)"></button></td>
       </tr>
     </tbody>
@@ -141,7 +141,7 @@
       meat: 'chicken',
       rice: false,
       salsa: false,
-      notes: ''
+      note: ''
     };
     tc.newTaco = _.clone(defaultTaco);
 
